@@ -1,14 +1,14 @@
 //Create Stateless EJB
 
-@Stateless
-public class LibraryPersistentBean implements LibraryPersistentBeanRemote {
-	
-   public void addBook(Book book) {
-     //persist book using jdbc calls
-   }    
+import com.tutorialspoint.entity.Book;
+import java.util.List;
+import javax.ejb.Remote;
 
-   public List<Book> getBooks() {        
-     //get books using jdbc calls
-   }
-   ...
+@Remote
+public interface LibraryPersistentBeanRemote {
+
+   void addBook(Book bookName);
+
+   List<Book> getBooks();
+    
 }
