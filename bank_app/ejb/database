@@ -1,0 +1,6 @@
+//Create a table books in default database postgres.
+
+CREATE TABLE books (
+   id     integer PRIMARY KEY,
+   name   varchar(50)
+);
