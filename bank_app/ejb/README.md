@@ -1,4 +1,4 @@
-**EJB - Access Database**
+## **EJB - Access Database**
 
 EJB 3.0, persistence mechanism is used to access the database in which container manages the database related operations. Developers can access database using jdbc api call directly in ejb business methods.
 
@@ -16,9 +16,9 @@ To demonstrate database access in ejb,the following tasks are:
 
 
 
-**Example Application**
+## **Example Application**
 
-## Description
+### Description
 
 - Create a project with a name EjbComponent under a package com.tutorialspoint.entity as explained in the EJB - Create Application chapter. You can also use the project created in EJB - Create Application chapter as such for this chapter to understand ejb data access concepts.
 - Create Book.java under package com.tutorialspoint.entity and modify it as shown below.
