@@ -1,5 +1,3 @@
-package com.javacodegeeks.jdbc.metadata;
-
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
@@ -7,7 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
- * @author Andres.Cespedes
+ * @author Levis Jani
  * @version 1.0 $Date: 24/01/2015
  * @since 1.7
  */
