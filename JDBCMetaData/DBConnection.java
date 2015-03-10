@@ -1,11 +1,9 @@
-package com.javacodegeeks.jdbc.metadata;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * @author Andres.Cespedes
+ * @author Levis Jani
  * @version 1.0 $Date: 24/01/2015
  * @since 1.7
  *
