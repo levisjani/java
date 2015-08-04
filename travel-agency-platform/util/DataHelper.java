@@ -1,5 +1,3 @@
-package com.ibm.nmon.util;
-
 import org.slf4j.Logger;
 
 import java.util.List;
