@@ -1,5 +1,3 @@
-package com.ibm.nmon.util;
-
 import java.io.File;
 import java.io.FileFilter;
 
