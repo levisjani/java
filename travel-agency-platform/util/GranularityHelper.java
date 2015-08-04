@@ -1,5 +1,3 @@
-package com.ibm.nmon.util;
-
 import com.ibm.nmon.NMONVisualizerApp;
 
 import com.ibm.nmon.interval.Interval;
