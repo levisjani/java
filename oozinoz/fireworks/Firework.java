@@ -1,20 +1,5 @@
 package com.oozinoz.fireworks;
 
-/*
- * Copyright (c) 2001 Steven J. Metsker.
- * 
- * Steve Metsker makes no representations or warranties about
- * the fitness of this software for any particular purpose, 
- * including the implied warranty of merchantability.
- *
- * Please use this software as you wish with the sole
- * restriction that you may not claim that you wrote it.
- */
-/**
- * Objects of this class represent types of fireworks.
- * 
- * @author Steven J. Metsker
- */
 public class Firework
 implements ClassificationConstants 
 {
@@ -126,13 +111,6 @@ public String getType()
 	return s.substring(s.lastIndexOf('.') + 1);
 }
 
-/**
- * Return a firework of the given name.
- *
- * @param name a name to lookup
- * @return a firework of the given name; not actually 
- *         implemented
- */
 public static Firework lookup(String name)
 {
 	return new Firework("demo", 0);
