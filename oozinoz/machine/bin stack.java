@@ -2,36 +2,11 @@ package com.oozinoz.machine;
 
 import java.util.*;
 
-/*
- * Copyright (c) 2001 Steven J. Metsker.
- * 
- * Steve Metsker makes no representations or warranties about
- * the fitness of this software for any particular purpose, 
- * including the implied warranty of merchantability.
- *
- * Please use this software as you wish with the sole
- * restriction that you may not claim that you wrote it.
- */
-/**
- * 
- * Represent a stack of bins, limited in height by the reach
- * of a track robot.
- * <p>
- * The "Introducing Extensions" chapter of "The Design Patterns 
- * Java Workbook" uses this class.
- * 
- * @author Steven J. Metsker
- */
 public class BinStack 
 {
 	public static final int STACK_LIMIT = 3;
 	private Stack stack = new Stack();
-/**
- * Remove and return the top of the stack. This method
- * will wait if the stack is empty.
- *
- * @return top of the stack
- */
+
 synchronized public Bin pop()
 {
 	while (stack.size() == 0)
