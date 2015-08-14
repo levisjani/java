@@ -3,36 +3,6 @@ package com.oozinoz.io;
 import java.io.*;
 import java.util.*;
 
-/*
- * Copyright (c) 2001 Steven J. Metsker.
- * 
- * Steve Metsker makes no representations or warranties about
- * the fitness of this software for any particular purpose, 
- * including the implied warranty of merchantability.
- *
- * Please use this software as you wish with the sole
- * restriction that you may not claim that you wrote it.
- */
-/**
- * A WrapFilter object compresses whitespace and 
- * wraps text at a specified width, optionally 
- * centering it. The class constructor requires a 
- * BufferedWriter object and the line width. A 
- * typical filter class will accept any Writer object 
- * in its constructor. The WrapFilter class requires 
- * a BufferedWriter object because it requires the 
- * ability to write newlines in a platform-
- * independent way, and BufferedWriter supplies this 
- * ability. 
- * <p> 
- * The WrapFilter class expects line break indicators 
- * to appear as newline characters. One way to 
- * arrange for this is to read input with a 
- * BufferedReader object that handles platform 
- * differences in how line breaks are indicated.
- * 
- * @author Steven J. Metsker 
- */
 public class WrapFilter extends OozinozFilter 
 {
 	protected int lineLength;
@@ -134,10 +104,6 @@ public void setCenter(boolean center)
 	this.center = center;
 }
 /**
- * Add the given character to the current word buffer, 
- * unless the character is whitespace. Whitespace marks 
- * the end of words. On seeing end of a word, "post" it.
- *
  * @param c the character to write
  *
  * @throws IOException if an I/O error occurs
